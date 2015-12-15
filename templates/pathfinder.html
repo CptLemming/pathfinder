@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% load pathfinder_tags %}
+
+{% block content %}
+<table class="pathfinder-table">
+    <tbody>
+        {% for y in graph.height|get_range %}
+            <tr>
+                {% for x in graph.width|get_range %}
+                    {% render_node x y %}
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}

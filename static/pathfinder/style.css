@@ -1,0 +1,39 @@
+.pathfinder-table {
+  /* border-collapse: collapse; */
+}
+
+.pathfinder-table tr td {
+  height: 25px;
+  width: 25px;
+  text-align: center;
+}
+
+.pathfinder-table td {
+  background: url(/static/pathfinder/grass.png) #D3D3D3;
+  background-size: 25px 25px;
+}
+
+.pathfinder-table td.start {
+  background: url(/static/pathfinder/dude.png) #F5A93C;
+  background-size: 29px 28px;
+}
+
+.pathfinder-table td.goal {
+  background: url(/static/pathfinder/goal.png) #FFF;
+  background-size: 15px 15px;
+  color: #56B7FF;
+  font-weight: bold;
+  background-repeat: no-repeat;
+}
+
+.pathfinder-table td.wall {
+  background: url(/static/pathfinder/boulder.png) #D3D3D3;
+  background-size: 25px 25px;
+}
+
+.pathfinder-table td.tree {
+  background: url(/static/pathfinder/tree.png) #51DC5A;
+  background-size: 25px 25px;
+  color: #FFF;
+  font-weight: bold;
+}

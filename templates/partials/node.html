@@ -1,0 +1,7 @@
+<td class="{% if is_tree_node %}tree{% elif is_wall_node %}wall{% elif is_goal_node %}goal{% elif is_start_node %}start{% endif %}" title="X:{{ x }} Y:{{ y }}">
+{% if node_cost %}
+{{ node_cost }}
+{% else %}
+&nbsp;
+{% endif %}
+</td>
